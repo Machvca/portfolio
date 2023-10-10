@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <section class="section-one">
@@ -21,7 +22,6 @@
           <h3 class="circle-content">§ HELLO</h3>
         </div>
       </div>
-
       <div class="first-div">
         <div class="line-one"></div>
         <h1 id="creative">CREATIVE <br />DEVELOPER</h1>
@@ -33,6 +33,7 @@
         </p>
       </div>
     </section>
+
     <section class="section-two">
       <div class="all-square">
         <div class="square">
@@ -78,10 +79,10 @@
           <div class="projectone-title-text">
             <h1 class="projectone-title">PING PONG TIME</h1>
             <p class="projectone-text">Game made with canvas for two players</p>
-            <img src="./images/cloud.svg" class="cloudimg" />
+            <img src="./images/cloud.svg" class="cloudimg ci1" />
           </div>
           <div>
-            <img src="./images/canvas.png" />
+            <img src="./images/canvas.png" class="imgprojects" />
           </div>
         </div>
 
@@ -98,10 +99,10 @@
               realize how much you can learn <br />in a short period of time
               when you are enjoying (most of the time) <br />what you are doing!
             </p>
-            <img src="./images/cloud.svg" class="cloudimg" />
+            <img src="./images/cloud.svg" class="cloudimg ci2" />
           </div>
           <div>
-            <img src="./images/festival.JPG" />
+            <img src="./images/festival.JPG" class="imgprojects" />
           </div>
         </div>
 
@@ -109,50 +110,82 @@
           <div class="projectone-title-text">
             <h1 class="projectone-title">PING PONG TIME</h1>
             <p class="projectone-text">Game made with canvas for two players</p>
-            <img src="./images/cloud.svg" class="cloudimg" />
+            <img src="./images/cloud.svg" class="cloudimg ci3" />
           </div>
           <div>
-            <img src="./images/canvas.png" />
+            <img src="./images/canvas.png" class="imgprojects" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SLIDER -->
-    <section class="section-five">
-      <div id="kiko-slider">
-        <ul class="slider">
-          <li id="slide1">
-            <h1 id="casual-me">03 - CASUAL ME</h1>
-            <img src="./images/joe.JPG" />
+    <section aria-label="Newest Photos">
+      <h1>ABOUT ME</h1>
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          &#8656;
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          &#8658;
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img
+              src="https://source.unsplash.com/78A265wPiO4"
+              alt="Nature Image #1"
+            />
           </li>
-          <li id="slide2">
-            <img src="./images/schatz.JPG" />
+          <li class="slide">
+            <img
+              src="https://source.unsplash.com/eOpewngf68w"
+              alt="Nature Image #2"
+            />
           </li>
-          <li id="slide3">
-            <div></div>
-            <img src="./images/Jorge.JPG" />
-          </li>
-        </ul>
-
-        <ul class="menu">
-          <li>
-            <a href="#slide1">I</a>
-          </li>
-          <li>
-            <a href="#slide2">II</a>
-          </li>
-          <li>
-            <a href="#slide3">III</a>
+          <li class="slide">
+            <img
+              src="https://source.unsplash.com/ndN00KmbJ1c"
+              alt="Nature Image #3"
+            />
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- SLIDER -->
+    <section class="section-six">
+      <div class="div-contact">
+        <h1 class="contact-me-text">|CONTACT ME|</h1>
+      </div>
+      <div class="mail">
+        <h1>JJORGEMACHUCA@GMAIL.COM</h1>
+        <div class="triangle">
+          <h1>04</h1>
+        </div>
+      </div>
+      <div class="arrow">
+        <a href="#top">
+          <img src="./images/up-arrow.png" />
+        </a>
+      </div>
+    </section>
 
     <footer>
-      <h1>-JORGE MACHUCA</h1>
+      <h1>JORGE MACHUCA</h1>
+      <a
+        title="gitlogo"
+        href="https://github.com/gomachuca"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img class="gitlog" src="./images/gitlogo.png"
+      /></a>
+
+      <a
+        title="linklogo"
+        href="https://www.linkedin.com/in/machvca/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img class="linkedin" src="./images/linklogo.png"
+      /></a>
       <h1>2023</h1>
     </footer>
   </body>
