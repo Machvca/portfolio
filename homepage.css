@@ -1,6 +1,26 @@
+@media (max-width: 900px) {
+  .header {
+    padding: 0 10px !important;
+  }
+
+  .header-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .line-one {
+    width: 100% !important;
+  }
+
+  #creative {
+    font-size: 90px !important;
+  }
+  .circle {
+    display: none;
+  }
+}
+
 body {
-  overflow: visible;
-  min-height: 100%;
   margin: 0;
   font-family: "Khand", sans-serif;
   background: linear-gradient(
@@ -9,10 +29,16 @@ body {
       rgba(162, 162, 162, 1) 100%
     )
     no-repeat;
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 100%;
-  display: block;
+}
+
+.header {
+  background-image: url(./images/jorge.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  min-height: 70vh;
+  padding-left: 80px;
 }
 
 html {
@@ -23,13 +49,9 @@ html {
   
 }
 
-.first-div {
+.header-text {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: -25%;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .all-circle {
@@ -63,24 +85,6 @@ html {
   font-size: 35px;
 }
 
-.section-one {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 100%;
-  display: block;
-
-  flex-direction: column;
-  background-image: url(./images/jorge.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: scroll;
-  overflow: hidden;
-  min-height: 70vh;
-  margin-left: 0px;
-  padding-left: 80px;
-}
-
 .line {
   width: 100px;
   height: 3px;
@@ -95,7 +99,6 @@ html {
   margin-top: 0px;
   margin-bottom: 0px;
   background-color: #77787a;
-  padding-top: px;
 }
 
 .square {
@@ -141,6 +144,7 @@ html {
 #name {
   padding-top: 0px;
   font-size: 40px;
+  margin-bottom: 10px;
 }
 
 #creative {
